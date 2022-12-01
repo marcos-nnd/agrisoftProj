@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+
+.input_valores {
+    all: unset;
+    width: 20vw;
+    height: 5vh;
+    border-bottom: 0.4vh solid darkolivegreen;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input_valores:hover {
+    border-bottom: 2px solid green;
+    -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+button{
+    background-color: aliceblue;
+}
+
+.logo1{
+    width: 18%;
+    height: 18%;
+    margin-top: 2vh;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+    padding: 60px;
+    background-image: url(../imgs/bgimgmain.jpeg);
+}
+
+.logo-calculadora{
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculadora{
+    background-color: rgb(245, 236, 236);
+    height: 100%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+}
+
+.fntTitulo{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fntTexto {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    height: 7vh;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}
+
+.cont{
+    margin-bottom: 2vh;
+    height: 36.8vh;
+    width: 50vw;
+}
+
+.continput{
+    display: flex;
+    justify-content: space-evenly;
+    height: 30vh;
+    width: 40vw;
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+    align-items: center;
+}
+
+.liInput {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.liLogo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+}
+
+.botao1 {
+    all: unset;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: darkolivegreen;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*JAVASCRIPT*/
+
+.div-calc {
+    display: flex;
+    padding: 10px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: 'Montserrat', sans-serif; 
+    width: 500px;
+    flex-direction: column;
+}
+
+.div-calc h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.botao-funcao {
+    all: unset;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    background-color: darkolivegreen;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 6px;
+}
+
+.botao-funcao:hover {
+    cursor: pointer;
+}
+
+#alerta {
+    color: red;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px;
+}

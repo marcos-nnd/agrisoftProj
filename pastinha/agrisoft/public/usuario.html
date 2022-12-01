@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/padraoestilo.css">
+    <link rel="stylesheet" href="estilos/usuario.css">
+    <title>Agrisoft - User</title>
+    <link rel="icon" href="imgs/icon_agrisoft.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./javascript/usuario.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="titulo_usuario">Agrisoft</h1>
+        <div class="div_imagem">
+            <img class="imagem_usuario" src="imgs/Imagem_brandao.png" alt="">
+        </div>
+
+        <h4 class="nome_usuario">Olá, Fernando Brandão !</h4>
+
+        <div class="div_botoes">
+            <a href="usuario.html"><button class="botoes_principais">Minha Safra</button></a>
+            <a href="Dash_2.html"><button class="botoes_principais">Gráficos</button></a>
+            <a href="feedback.html"><button class="botoes_principais">Feedback</button></a>
+            <a style="color: white;" href="index.html">
+                <button class="botao_sair">
+                    Sair
+                </button>
+            </a>
+        </div>
+
+    </div>
+
+    <main>
+        <div class="container2">
+            <div class="dash">
+                <select onclick="selecionar_hectare()" class="select_hectare_class"  id="select_hectare">
+                    <option class="option_hectare amarelo" value="2">Hectare 1</option>
+                    <option class="option_hectare verde"   value="1">Hectare 2</option>
+                    <option class="option_hectare verde"   value="1">Hectare 3</option>
+                    <option class="option_hectare verde"   value="1">Hectare 4</option>
+                    <option class="option_hectare vermelho"value="3">Hectare 5</option>
+                    <option class="option_hectare verde"   value="1">Hectare 6</option>
+                    <option class="option_hectare azul"    value="4">Hectare 7</option>
+                    <option class="option_hectare verde"   value="1">Hectare 8</option>
+                    <option class="option_hectare verde"   value="1">Hectare 9</option>
+                    <option class="option_hectare amarelo" value="2">Hectare 10</option>
+                    <option class="option_hectare verde"   value="1">Hectare 11</option>
+                    <option class="option_hectare vermelho"value="3">Hectare 12</option>
+                    <option class="option_hectare verde"   value="1">Hectare 13</option>
+                    <option class="option_hectare verde"   value="1">Hectare 14</option>
+                    <option class="option_hectare verde"   value="1">Hectare 15</option>
+                    <option class="option_hectare verde"   value="1">Hectare 16</option>
+                    <option class="option_hectare amarelo" value="2">Hectare 17</option>
+                    <option class="option_hectare verde"   value="1">Hectare 18</option>
+                    <option class="option_hectare verde"   value="1">Hectare 19</option>
+                    <option class="option_hectare roxo"    value="5">Hectare 20</option>
+                </select>
+                <h2 class="titulo_setor">Setor 1</h2>
+                <div class="container_setor um">
+                    <div id="resultado_setor1" class="setor1">
+                        <div id="text_setor_temp_box1" class="text_setor_temp um">Temperatura
+                            <span id="TEMP1" class="number_temp um ">28°C</span>
+                        </div>
+                    </div>
+                    <div id="resultado_setor1" class="setor1">
+                        <div  id="text_setor_temp_box2" class="text_setor_umid um">Umidade
+                            <span id="UMID1" class="number_umid um">23%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="titulo_setor">Setor 2</h2>
+                <div class="container_setor dois">
+                    <div id="resultado_setor2" class="setor2">
+                        <div id="text_setor_temp_box3" class="text_setor_temp dois">Temperatura
+                            <span id="TEMP2"  class="number_temp dois">32°C</span>
+                        </div>
+                    </div>
+                    <div id="resultado_setor2" class="setor2">
+                        <div id="text_setor_temp_box4" class="text_setor_umid dois">Umidade
+                            <span  id="UMID2"class="number_umid dois">20%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="legenda">
+                <span class="legenda_cores vermelho"> <b>CRÍTICO </b></span>
+                <span class="legenda_cores amarelo">  <b>ALERTA  </b></span>
+                <span class="legenda_cores verde">    <b>IDEAL   </b></span>
+                <span class="legenda_cores azul">     <b>ALERTA  </b></span>
+                <span class="legenda_cores roxo">     <b>CRÍTICO </b> </span>
+            </div>
+
+            <div class="legenda_descricao_geral">   
+               <span class="texto_legenda"> <span class="legenda_descricao vermelho">vermelho</span><b style="color:white ; margin-left: 2vw;">Temperatura elevada em estado crítico(31°C a 40°C)</b></span>
+               <span class="texto_legenda"> <span class="legenda_descricao amarelo">amarelo</span><b style="color:white ; margin-left: 2vw;">Temperatura alarmante (31°C)</b></span>
+               <span class="texto_legenda"> <span class="legenda_descricao verde">verde</span><b style="color:white ; margin-left: 2vw;">Temperatura Ideal (20°C a  30°C)</b></span>
+               <span class="texto_legenda"> <span class="legenda_descricao azul">azul</span><b style="color:white ; margin-left: 2vw;">Temperatura alarmante(19°C)</b></span>
+               <span class="texto_legenda"> <span class="legenda_descricao roxo">roxo</span><b style="color:white ; margin-left: 2vw;">Temperatura baixa em estado crítico(10°C a 18°C)</b></span>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

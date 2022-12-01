@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    background-image: url("../imgs/background.jpg");
+    background-size: cover;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.texto-as{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    width: 26%;
+}
+
+/*
+.texto-as b {
+    font-weight: 600;
+    background-color: rgba(85, 107, 47, 0.493);
+    border-radius: 15px;
+    padding: 3px;
+}*/
+
+.aboutus {
+    padding: 20px 70px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutus p {
+    margin: 10px 100px;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.titulo {
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-weight: 600;
+}
+
+/* MISSÃO VISÃO E VALORES */
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 150px 60px 150px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    background-color: lightgreen;
+    border-radius: 15px;
+    padding: 20px;
+    width: 30%;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 5px 5px 5px 3px rgba(25, 25, 25, 0.3);
+}
+
+.card h3 {
+    font-weight: 800;
+}
+
+.card p {
+    font-weight: 600;
+}
+
+.img-card {
+    max-width: 100px;
+}

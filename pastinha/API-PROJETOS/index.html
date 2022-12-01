@@ -1,0 +1,521 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Line Chart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
+    <script src="http://www.chartjs.org/samples/latest/utils.js"></script>
+    <style>
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Sensor DHT 11 - TempProj</h1>
+        <section style="width:100%">
+            <canvas id="TempProj"></canvas>
+        </section>
+        <h1>Sensor DHT 11 - TempProj2</h1>
+        <section style="width: 100%;">
+            <canvas id="TempProj2"></canvas>
+        </section>
+        <h1>Sensor DHT 11 - TempProj3</h1>
+        <section style="width: 100%;">
+            <canvas id="TempProj3"></canvas>
+        </section>
+        <h1>Sensor DHT 11 - TempProj4</h1>
+        <section style="width: 100%;">
+            <canvas id="TempProj4"></canvas>
+        </section>
+        <h1>Sensor DHT 11 - TempProj5</h1>
+        <section style="width: 100%;">
+            <canvas id="TempProj5"></canvas>
+        </section>
+        <h1>Sensor DHT 11 - UmidProj</h1>
+        <section style="width:100%">
+            <canvas id="UmidProj"></canvas>
+        </section>
+        <h1>Sensor DHT 11 - UmidProj2</h1>
+        <section style="width: 100%;">
+            <canvas id="UmidProj2"></canvas>
+        </section>
+        <h1>Sensor DHT 11 - UmidProj3</h1>
+        <section style="width: 100%;">
+            <canvas id="UmidProj3"></canvas>
+        </section>
+        <h1>Sensor DHT 11 - UmidProj4</h1>
+        <section style="width: 100%;">
+            <canvas id="UmidProj4"></canvas>
+        </section>
+        <h1>Sensor DHT 11 - UmidProj5</h1>
+        <section style="width: 100%;">
+            <canvas id="UmidProj5"></canvas>
+        </section>
+    </div>
+
+    <script>
+
+        /* -- dht11TempProj -- */
+        var contextoDht11TempProj = document.getElementById('TempProj').getContext('2d');
+        contextoDht11TempProj.canvas.width = 1000;
+        contextoDht11TempProj.canvas.height = 300;
+        var TempProj = new Chart(
+            contextoDht11TempProj,
+            {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: "Temperatura",
+                        type: 'line',
+                        borderColor: ['#ff3232'],
+                        backgroundColor: ['#ff7f7f']
+                    }]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            distribution: 'series',
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }],
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Luminosidade'
+                            },
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    },
+                    animation: {
+                        duration: 0
+                    }
+                }
+            }
+        );
+        /* -- dht11TempProj2 -- */
+       
+        var contextoDht11TempProj2 = document.getElementById('TempProj2').getContext('2d');
+        contextoDht11TempProj2.canvas.width = 1000;
+        contextoDht11TempProj2.canvas.height = 300;
+        var TempProj2 = new Chart(
+            contextoDht11TempProj2,
+            {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: "Temperatura",
+                        type: 'line',
+                        borderColor: ['#ff3232'],
+                        backgroundColor: ['#ff7f7f']
+                    }]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            distribution: 'series',
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }],
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Luminosidade'
+                            },
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    },
+                    animation: {
+                        duration: 0
+                    }
+                }
+            }
+        );
+       /* -- dht11TempProj3 -- */
+       var contextoDht11TempProj3 = document.getElementById('TempProj3').getContext('2d');
+        contextoDht11TempProj3.canvas.width = 1000;
+        contextoDht11TempProj3.canvas.height = 300;
+        var TempProj3 = new Chart(
+            contextoDht11TempProj3,
+            {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: "Temperatura",
+                        type: 'line',
+                        borderColor: ['#ff3232'],
+                        backgroundColor: ['#ff7f7f']
+                    }]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            distribution: 'series',
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }],
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Luminosidade'
+                            },
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    },
+                    animation: {
+                        duration: 0
+                    }
+                }
+            }
+        );
+       /* -- dht11TempProj4 -- */
+       var contextoDht11TempProj4 = document.getElementById('TempProj4').getContext('2d');
+        contextoDht11TempProj4.canvas.width = 1000;
+        contextoDht11TempProj4.canvas.height = 300;
+        var TempProj4 = new Chart(
+            contextoDht11TempProj4,
+            {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: "Temperatura",
+                        type: 'line',
+                        borderColor: ['#ff3232'],
+                        backgroundColor: ['#ff7f7f']
+                    }]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            distribution: 'series',
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }],
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Luminosidade'
+                            },
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    },
+                    animation: {
+                        duration: 0
+                    }
+                }
+            }
+        );
+          /* -- dht11TempProj5 -- */
+          var contextoDht11TempProj5 = document.getElementById('TempProj5').getContext('2d');
+        contextoDht11TempProj5.canvas.width = 1000;
+        contextoDht11TempProj5.canvas.height = 300;
+        var TempProj5 = new Chart(
+            contextoDht11TempProj5,
+            {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: "Temperatura",
+                        type: 'line',
+                        borderColor: ['#ff3232'],
+                        backgroundColor: ['#ff7f7f']
+                    }]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            distribution: 'series',
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }],
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Luminosidade'
+                            },
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    },
+                    animation: {
+                        duration: 0
+                    }
+                }
+            }
+        );
+
+
+     /* -- dht11UmidProj -- */
+     var contextoDht11UmidProj = document.getElementById('UmidProj').getContext('2d');
+        contextoDht11UmidProj.canvas.width = 1000;
+        contextoDht11UmidProj.canvas.height = 300;
+        var UmidProj = new Chart(
+            contextoDht11UmidProj,
+            {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: 'Umidade',
+                        type: 'line',
+                        borderColor: ['#45b3e7'],
+                        backgroundColor: ['#89cff0']
+                    }]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            distribution: 'series',
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }],
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Umidade'
+                            },
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    },
+                    animation: {
+                        duration: 0
+                    }
+                }
+            }
+        ); 
+
+         /* -- dht11UmidProj2 -- */
+         var contextoDht11UmidProj2 = document.getElementById('UmidProj2').getContext('2d');
+        contextoDht11UmidProj2.canvas.width = 1000;
+        contextoDht11UmidProj2.canvas.height = 300;
+        var UmidProj2 = new Chart(
+            contextoDht11UmidProj2,
+            {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: 'Umidade',
+                        type: 'line',
+                        borderColor: ['#45b3e7'],
+                        backgroundColor: ['#89cff0']
+                    }]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            distribution: 'series',
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }],
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Umidade'
+                            },
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    },
+                    animation: {
+                        duration: 0
+                    }
+                }
+            }
+        ); 
+
+         /* -- dht11UmidProj3 -- */
+         var contextoDht11UmidProj3 = document.getElementById('UmidProj3').getContext('2d');
+        contextoDht11UmidProj3.canvas.width = 1000;
+        contextoDht11UmidProj3.canvas.height = 300;
+        var UmidProj3 = new Chart(
+            contextoDht11UmidProj3,
+            {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: 'Umidade',
+                        type: 'line',
+                        borderColor: ['#45b3e7'],
+                        backgroundColor: ['#89cff0']
+                    }]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            distribution: 'series',
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }],
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Umidade'
+                            },
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    },
+                    animation: {
+                        duration: 0
+                    }
+                }
+            }
+        ); 
+
+         /* -- dht11UmidProj4 -- */
+         var contextoDht11UmidProj4 = document.getElementById('UmidProj4').getContext('2d');
+        contextoDht11UmidProj4.canvas.width = 1000;
+        contextoDht11UmidProj4.canvas.height = 300;
+        var UmidProj4 = new Chart(
+            contextoDht11UmidProj4,
+            {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: 'Umidade',
+                        type: 'line',
+                        borderColor: ['#45b3e7'],
+                        backgroundColor: ['#89cff0']
+                    }]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            distribution: 'series',
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }],
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Umidade'
+                            },
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    },
+                    animation: {
+                        duration: 0
+                    }
+                }
+            }
+        ); 
+
+         /* -- dht11UmidProj5 -- */
+         var contextoDht11UmidProj5 = document.getElementById('UmidProj5').getContext('2d');
+        contextoDht11UmidProj5.canvas.width = 1000;
+        contextoDht11UmidProj5.canvas.height = 300;
+        var UmidProj5 = new Chart(
+            contextoDht11UmidProj5,
+            {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: 'Umidade',
+                        type: 'line',
+                        borderColor: ['#45b3e7'],
+                        backgroundColor: ['#89cff0']
+                    }]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            distribution: 'series',
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }],
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Umidade'
+                            },
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    },
+                    animation: {
+                        duration: 0
+                    }
+                }
+            }
+        ); 
+        
+
+
+
+        var paginacao = {};
+        var tempo = {};
+        function obterDados(grafico, endpoint) {
+            var http = new XMLHttpRequest();
+            http.open('GET', 'http://localhost:3300/sensores/' + endpoint, false);
+            http.send(null);
+            var valores = JSON.parse(http.responseText);
+            if (paginacao[endpoint] == null) {
+                paginacao[endpoint] = 0;
+            }
+            if (tempo[endpoint] == null) {
+                tempo[endpoint] = 0;
+            }
+            // Exibir à partir do último elemento exibido anteriormente
+            var ultimaPaginacao = paginacao[endpoint];
+            paginacao[endpoint] = valores.length;
+            var valores = valores.slice(ultimaPaginacao);
+            valores.forEach((valor) => {
+                //Máximo de 60 itens exibidos no gráfico
+                if (grafico.data.labels.length == 10 && grafico.data.datasets[0].data.length == 10) {
+                    grafico.data.labels.shift();
+                    grafico.data.datasets[0].data.shift();
+                }
+
+                grafico.data.labels.push(tempo[endpoint]++);
+                grafico.data.datasets[0].data.push(parseFloat(valor));
+                grafico.update();
+            })
+        }
+
+        setInterval(() => {
+            obterDados(TempProj, '/sensores/TempProj');
+            obterDados(TempProj2, '/sensores/TempProj2');
+            obterDados(TempProj3, '/sensores/TempProj3');
+            obterDados(TempProj4, '/sensores/TempProj4');
+            obterDados(TempProj5, '/sensores/TempProj5');
+            
+            obterDados(TempProj, '/sensores/UmidProj');
+            obterDados(TempProj2, '/sensores/UmidProj2');
+            obterDados(TempProj3, '/sensores/UmidProj3');
+            obterDados(TempProj4, '/sensores/UmidProj4');
+            obterDados(TempProj5, '/sensores/UmidProj5');
+        }, 1000);
+
+    </script>
+</body>

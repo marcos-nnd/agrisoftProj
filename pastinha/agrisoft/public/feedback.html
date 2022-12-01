@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/padraoestilo.css">
+    <link rel="stylesheet" href="estilos/feedback.css">
+    <title>Agrisoft - User</title>
+    <link rel="icon" href="imgs/icon_agrisoft.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="titulo_usuario">Agrisoft</h1>
+        <div class="div_imagem">
+            <img class="imagem_usuario" src="imgs/Imagem_brandao.png" alt="">
+        </div>
+
+        <h4 class="nome_usuario">Olá, Fernando Brandão !</h4>
+
+        <div class="div_botoes">
+            <a href="usuario.html"><button class="botoes_principais">Minha Safra</button></a>
+            <a href="Dash_2.html"><button class="botoes_principais">Gráficos</button></a>
+            <a href="feedback.html"></a><button class="botoes_principais">Feedback</button></a>
+            <a  style="color: white;" href="index.html">
+                <button class="botao_sair">
+                    Sair
+                </button>
+            </a>
+        </div>
+
+    </div>
+
+    <main id="main">
+        <div class="container2">
+
+           <select class="texto_assunto" name="" id="">
+            <option value="">Sugestão de Melhoria</option>
+            <option value="">Reclamação</option>
+           
+           </select>
+        </div>
+
+        <div class="container3" id="container_texto">
+            <textarea class="texto" type="text"  id="texto" cols="30" rows="10"  placeholder="Escvreva aqui seu feedback"></textarea>
+            <button class="enviar" onclick="Enviar()">ENVIAR</button>
+        </div>
+    </div>
+</main>
+    
+</body>
+</html>
+
+<script>
+function Enviar(){
+    main.innerHTML = `
+   
+    <div class="container2">
+
+<select class="texto_assunto" name="" id="">
+ <option value="">Sugestão de Melhoria</option>
+ <option value="">Reclamação</option>
+
+</select>
+</div>
+
+<div class="container3" id="container_texto">
+
+ <textarea class="texto" type="text"  id="texto" cols="30" rows="10"  placeholder="Escvreva aqui seu feedback"></textarea>
+
+ <button class="enviar" onclick="Enviar()">ENVIAR</button>
+
+</div>
+
+
+</div>
+`
+    alert('Nós recebemos seu feedback, Obrigado 😁')
+
+}
+</script>

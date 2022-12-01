@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    width: 100%;
+    /*position: fixed;*/
+}
+
+.logo {
+    padding: 0;
+    margin: 10px;
+    max-width: 40px;
+}
+
+.menu-navegacao {
+    margin: 0;
+    display: flex;
+    gap: 40px;
+}
+
+.tracinho {
+    cursor: auto;
+    font-size: large;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.menu-navegacao-item {
+    font-weight: 600;
+    font-size: 13px;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-around;
+}
+
+.menu-navegacao-item:hover {
+    opacity: 0.50;
+    animation-delay: 5ms;
+    color: rgb(124, 255, 124);
+    border-radius: 10px;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+/*rodape*/
+.rodape {
+    margin: 5px;
+    display: flex;
+    gap: 30px;
+}
+
+.container-rodape {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.rodape-item {
+    color: aliceblue;
+    font-size: 10px;
+}
+
+.asft {
+    color: aliceblue;
+    margin: 5px;
+    font-size: 10px;
+}
+
+.logo_rdp {
+    max-width: 55px;
+    margin: 15px 0;
+}
+
+/*contato*/
+
+.div-contato {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90%;
+}
+
+.contato {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contato-paragrafo {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.contato-logo {
+    max-width: 20px;
+}
+
+.texto {
+    color: aliceblue;
+}

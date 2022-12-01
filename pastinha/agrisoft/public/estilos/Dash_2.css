@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;500;600;700;800;900&family=Roboto:wght@300&display=swap');
+
+.container {
+    background-size: cover;
+    width: 18.5%;
+    height: 100%;
+    margin-right: 20vw;
+    background-color: rgba(0, 0, 0,0.9);
+    color: rgb(253, 253, 253);
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    border-color: black;
+    border-width: 2px;
+    border-right-style: groove;
+
+    position: static;
+    position: fixed;
+  
+    
+}
+
+
+
+.container2 {
+    width: 100%;
+    height: 160vh;
+  
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+
+
+
+.container3 {
+   
+ 
+    color: rgb(253, 253, 253);
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  
+  
+
+}
+
+
+.container_setor {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    
+
+    
+
+}
+
+.container_setor.um {
+
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 4vh;
+    background-color: rgba(0, 0, 0, 0.2);
+
+
+
+}
+.container_setor.dois{
+
+    align-items: center;
+    border-radius: 10px;
+   
+    background-color: rgba(0, 0, 0,0.2);
+
+}
+
+
+.container_setor.tres{
+
+   
+    align-items: center;
+   margin-top: 7vh;
+   margin-bottom: 4vh;
+    border-radius: 10px; 
+    
+}
+
+
+/* Caixar dos setores */
+.setor1 {
+    width: 40%;
+    height: 30vh;
+    margin-top: -3vh;
+
+
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+}
+
+.setor2 {
+    width: 40%;
+    height: 30vh;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.setor3{
+
+border-radius: 10px;
+box-shadow: 7px 7px 3px  #292c29;
+background-color: rgba(0, 0, 0,0.2);
+height: 100%;
+width: 40%;
+align-items: center;
+flex-direction: column;
+text-align: center;
+
+
+}
+
+
+/* Caixa de EXIBIÇÃO DE MEDIDAS */
+.dash {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+
+/* LEGENDA */
+
+.legenda {
+   
+    width: 80%;
+    height: 10%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    border-radius: 10px;
+    color: white;
+   
+}
+
+.legenda_descricao_geral{
+    background-color: rgba(0, 0, 0,0.1);
+    width: 50%;
+    height: 70%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 10px 10px 3px  #292c29;
+  margin-bottom: 10vh;
+ 
+}
+
+.texto_legenda{
+    color: #fff;
+    width: 80%;
+    height: 6%;
+    display: flex;
+    align-items: center;
+   
+
+   
+    
+}
+
+.legenda_descricao{
+    width: 50%;
+    height:20vh ;
+    margin-left: 2vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight:bolder;
+
+}
+.legenda_descricao.vermelho{
+    background-color: rgb(255, 255, 255, 0.1);
+    color:#fff
+  
+    
+}
+.legenda_descricao.amarelo{
+    background-color: rgb(255, 255, 255, 0.1);
+    color:#fff
+  
+}
+
+
+
+.KPI{
+width: 62%;
+height: 90% ;
+
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+border-radius: 10px;
+font-size: 25px;
+color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0, 0.2);
+margin-bottom: -2vh;
+
+
+}
+
+
+
+.titulo_setor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 20%;
+    background-color: rgb(0, 0, 0, 0.2);
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    
+    
+}
+.texto_grafico{
+    color: white;
+}
+
+/* Conteudo Caixas Setores */
+
+.text_setor_temp {
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    border: 1px solid #eee;
+    box-shadow: 8px 7px 10px yellow;
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
+
+}
+
+.text_setor_umid {
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #eee;
+    box-shadow: 8px 7px 10px  #42d353;
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
+
+
+}
+
+
+/* NUMEROS DOS SETORES */
+.number_temp {
+    font-size: 50px;
+    margin-top: 1vh;
+    color: yellow;
+}
+
+
+
+.number_umid {
+    font-size: 50px;
+    margin-top: 1vh;
+    color:  #42d353;
+}
+
+
+
+
+
+/* Caixa dos botoes hectares */
+.container_alerts {
+    margin-top: 9vh;
+    width: 20%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5%;
+    margin-left: 3vw;
+    background-color: rgba(163, 163, 150, 0.9);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40;
+
+    border-style: groove;
+    border-color: yellow;
+    border-width: 5px;
+
+
+
+
+}
+
+
+
+
+/* SELECIONAR HECTAR */
+
+.select_hectare {
+    padding: 10px;
+    font-size: 40px;
+    width: 40%;
+    text-align: center;
+    margin-top: 4vh;
+   border-radius: 10px;
+    border-style: none;
+    margin-bottom: 2vh;
+    background-color: rgb(0, 0, 0, 0.2);
+    color: rgb(255, 255, 255);
+    appearance:none;
+
+}
+
+
+
+
+
+.select_hectare:hover{
+    cursor: pointer;
+    opacity: 60%;
+    color: white;
+}
+option{
+    color: #000000;
+    appearance:none;
+}
+option:hover{
+    color: #000000;
+    appearance:none;
+}
+
+.option_hectare.verde{
+
+background-color: #42d353;
+
+}
+
+.option_hectare.vermelho{
+    
+    background-color: rgb(212, 7, 7);
+    
+    }
+
+    .option_hectare.amarelo{
+        
+        background-color: yellow;
+        
+        }
+
+        .option_hectare.azul{
+        
+            background-color:rgb(67, 200, 253);
+            
+            }
+
+            .option_hectare.roxo{
+                
+                background-color: rgb(63, 5, 102);
+                
+                }
+
+
+
+/* ESTILO INDIVIDUAL DOS CIRCULOS HECTARES */
+.circulo_alertas_hectares.um {
+    background-color: red;
+}
+
+.circulo_alertas_hectares.dois {
+    background-color: rgb(255, 230, 0);
+}
+
+.circulo_alertas_hectares.tres {
+    background-color: rgb(217, 255, 0);
+}
+
+.circulo_alertas_hectares.quatro {
+    background-color: rgb(17, 0, 255);
+}
+
+.botoes_hactare:hover {
+    color: rgb(255, 255, 255);
+    opacity: 80%;
+    background-color: rgba(0, 36, 12, 0.8);
+    box-shadow: 3px 3px 3px rgb(255, 255, 255);
+    text-shadow: none;
+}
+
+
+
+
+
+
+/* CORPO */
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+    width: 81.5%;
+    font-family: 'Kanit', sans-serif;
+    margin-left: 18.3vw;
+    background-color: #2F5233;
+    background-size: cover;
+   
+
+
+
+}
+
+/* CAIXA DE USUARIO */
+
+.titulo_usuario {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+    margin-bottom: 20%;
+}
+
+.nome_usuario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    font-size: 15px;
+
+}
+
+
+.imagem_usuario {
+    border-radius: 100%;
+    width: 7.5vw;
+    height: 15vh;
+    margin-left: 5.3vw;
+    margin-bottom: 3vh;
+    border-color: rgb(0, 0, 0);
+    border-width: 2px;
+    border-style: groove;
+}
+
+.botoes_principais {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #5b8623;
+    padding: 10px 0px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+    margin: 3vh;
+    margin-bottom: 1vh;
+}
+
+.botoes_principais:hover {
+    color: rgb(255, 255, 255);
+    opacity: 80%;
+    background-color: #81aa35;
+}
+
+.botao_sair:hover {
+    color: rgb(255, 255, 255);
+    opacity: 80%;
+}
+
+.botao_sair {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #2F5233;
+    ;
+    padding: 10px 0px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+    margin: 3vh;
+    margin-top: 3.5vh;
+}
+
+.div_botoes {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* GRAFICOS */
+
+
+.grafico_dash6{
+    transform:scale(0.7)
+} 
+
+.grafico_dash5{
+    transform:scale(0.7)
+}
+
+.grafico_titulo{
+    color: white;
+    margin-top: 5vh;
+
+    align-items: center;
+    text-align: center;
+      
+}

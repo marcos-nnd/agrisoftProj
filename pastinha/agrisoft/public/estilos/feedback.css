@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;500;600;700;800;900&family=Roboto:wght@300&display=swap');
+
+main {
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Kanit', sans-serif;
+    margin-left: 18.3vw;
+    background-color: #2F5233;
+    background-size: cover;
+    background-image: url(background.jpg);
+}
+
+.container {
+    background-size: cover;
+    width: 18.5%;
+    height: 100%;
+    margin-right: 20vw;
+    background-color: rgba(0, 0, 0,0.9);
+    color: rgb(253, 253, 253);
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    border-color: black;
+    border-width: 2px;
+    border-right-style: groove;
+    position: static;
+    position: fixed;  
+}
+
+.container2 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 10%;
+}
+
+
+.container3 {
+    width: 50%;
+    height: 45vh;
+    margin-bottom: 20vh;
+}
+
+
+/* CAIXA DE TEXTO */
+
+.texto{
+    width: 100%;
+    border-radius: 10px;
+    border-top-left-radius:5px ;
+    margin-top: 10vh;
+}
+
+.texto_assunto{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0,0.5);
+    color: #fff;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* BOTAO ENVIAR */
+
+.enviar{
+    background-color: rgb(3, 47, 97);
+    width: 10vw;
+    height: 5vh;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin: 15px;
+}
+
+.botao_sair {
+    margin: 20px;
+}
+
+/* CAIXA DE USUARIO */
+
+.titulo_usuario {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+    margin-bottom: 20%;
+}
+
+.nome_usuario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    font-size: 15px;
+}
+
+.imagem_usuario {
+    border-radius: 100%;
+    width: 7.5vw;
+    height: 15vh;
+    margin-left: 5.3vw;
+    margin-bottom: 3vh;
+    border-color: rgb(0, 0, 0);
+    border-width: 2px;
+    border-style: groove;
+}
+
+.botoes_principais {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #5b8623;
+    padding: 10px 0px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+    margin: 3vh;
+    margin-bottom: 1vh;
+}
+
+.botoes_principais:hover {
+    color: rgb(255, 255, 255);
+    opacity: 80%;
+    background-color: #81aa35;
+}
+
+.botao_sair:hover {
+    color: rgb(255, 255, 255);
+    opacity: 80%;
+}
+
+.botao_sair {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #2F5233;
+    ;
+    padding: 10px 0px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+    margin: 3vh;
+    margin-top: 3.5vh;
+}
+
+.div_botoes {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

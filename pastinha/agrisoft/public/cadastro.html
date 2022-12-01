@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/padraoestilo.css">
+    <link rel="stylesheet" href="estilos/cadastro.css">
+    <script src="./javascript/cadastro.js"></script>
+    <script src="../src/models/usuarioModel.js"></script>
+    <link rel="icon" href="./imgs/icon_agrisoft.png">
+    <title>Agrisoft - Cadastro</title>
+</head>
+<body>
+    
+    <header>
+        <img class="logo" src="imgs/icon_agrisoft.png" alt="logo">
+        <nav class="menu-navegacao">
+            <a class="menu-navegacao-item" href="index.html">Página Inicial</a>
+            <a class="menu-navegacao-item" href="index.html#sobre_nos">Sobre nós</a>
+            <a class="menu-navegacao-item" href="calculadora.html">Simulador Financeiro</a>
+            <p class="tracinho">|</p>
+            <a class="menu-navegacao-item" href="cadastro.html">Cadastre-se</a>
+            <a class="menu-navegacao-item" href="cliente.html">Já sou cliente</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div id="principal" class="caixa-formulario">
+                <p class="titulo">Bem vindo à <b>Agrisoft</b>!</p>  
+                <div class="campo">
+                    <label class="texto-input" for="nome">Nome:</label>
+                    <input class="in-campo" type="text" id="in_nome" placeholder="Seu nome">
+                </div>
+                <div class="campo">
+                    <label class="texto-input" for="email">E-mail:</label>
+                    <input class="in-campo" type="email" id="in_email" placeholder="email@email.com">
+                </div>
+                <div class="campo">
+                    <label class="texto-input" for="senha">Senha: <br>
+                    </label>
+                    <input class="in-campo" type="password" id="in_senha" placeholder="*********">
+                </div>
+                <div class="campo">
+                    <label class="texto-input" for="confirmacao_senha">Confirmação de Senha:</label>
+                    <input class="in-campo" type="password" id="in_confirmacao_senha" placeholder="*********" onkeyup="verificacao_senha()">
+                </div>
+                <div class="campo">
+                    <label class="texto-input" for="cnpj">CNPJ Fazenda:</label>
+                    <input class="in-campo" id="in_cnpj" placeholder="XX.XXX.XXX/0001-XX">
+                </div><br>
+                <div id="regra_senha">
+                    A senha deve conter letra minúscula,
+                    letra maiuscula e um numero.
+                </div>
+                <div id="alerta"></div><br>
+                <p class="texto-login">Já tem login? <a href="./login.html">Login</a></p><br>
+                <button class="botao-cadastro" onclick="cadastrar()">Cadastrar</button><br>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!--CONTATOS E ICONES RODAPE SUPERIOR-->
+        <div class="div-contato">
+            <img class="logo_rdp" src="./imgs/logo_agrisoft.png" alt="logo_agrisoft">
+            <div class="contato">
+                <p class="contato-paragrafo">
+                    <img class="contato-logo" src="./imgs/facebook.png" alt="logo feice">
+                    <p class="texto">AgriSoft</p>
+                </p>
+
+                <p class="contato-paragrafo">
+                    <img class="contato-logo" src="./imgs/instagram.png" alt="logo feice">
+                    <p class="texto">@agrisoft</p>
+                </p>
+
+                <p class="contato-paragrafo">
+                    <img class="contato-logo" src="./imgs/twitter.png" alt="logo feice">
+                    <p class="texto">@agrisoft</p>
+                </p>            
+            </div>
+        </div>
+        <!--AQUI COMEÇA O RODAPE DO RODAPE-->
+        <div class="container-rodape">
+            <div class="rodape">
+                <a class="rodape-item" href="#">Políticas de Privacidade</a>
+                <a class="rodape-item" href="#">Termos de serviço</a>
+                <a class="rodape-item" href="#">Configurações de Cookies da Página</a>
+            </div>
+
+            <a class="asft" href="#">&copy;2022, AGRISOFT</a>
+        </div>
+    </footer>
+
+</body>
+</html>

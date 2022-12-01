@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.container {
+    display: flex;
+    background-image: url(../imgs/bgimgmain.jpeg);
+    padding: 60px;
+    background-size: cover;
+    font-size: xx-large;
+    font-weight: 600;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.container .filho{
+ background-color: rgb(245, 236, 236);
+ font-size: large;
+ color: black; 
+ padding: 40px 40px;
+ border-radius: 20px;
+ display: flex;
+ flex-direction: column;
+ margin: 10px;
+width: 400px;
+
+}
+
+.filho .titulo{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    font-size: 30px;
+}
+
+.filho .campo{
+    color: black;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+
+ .filho .logo{
+    width: 100%;
+    height: 100%; 
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: -8vh;
+}
+
+.campo input{
+   padding: 10px;
+   border: none;
+   background-color: rgba(255, 255, 255, 0);
+   border-bottom: 2px solid darkolivegreen;
+   width: 100%;
+   outline: none;
+   transition: 0.8s ease-in-out;
+   
+}
+
+.campo input:hover{
+    border: none;
+    border-bottom: 2px solid green;
+    -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: darkolivegreen;
+    padding: 10px 0px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 120px;
+    margin: 0 auto;   
+}
+
+a{
+text-decoration: none;
+color: #fff;
+}
+
+.texto_redefinir_senha{
+    font-size: 11px;
+    margin-top: 20px;
+    margin-left: 95px;
+    color: black;
+
+}
+
+.link_senha{
+    color: black;
+}
+
+.link_senha:hover{
+color: rgba(28, 60, 89, 1);  ;
+}
+
+.botao_login{
+margin-top: 20px;
+border-radius: 30px;
+}
+
+.texto_cadastre{
+    font-size: 11px;
+    margin-top: 20px;
+    margin-left: 123px;
+    color: black;
+
+}
+
+
+

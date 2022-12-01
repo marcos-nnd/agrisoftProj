@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+
+main {
+    background-image: url(../imgs/bgimgmain.jpeg);
+    background-size: cover;
+}
+
+.banner {
+    padding: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-formulario {
+    width: 45%;
+    background-color:rgba(255, 255, 255, 1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px;
+}
+
+.titulo {
+    margin: 25px;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo b {
+    color: darkolivegreen;
+}
+
+.in-campo {
+    all: unset;
+    width: 50%;
+    height: 5vh;
+    border-bottom: 0.4vh solid darkolivegreen;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.in-campo:hover {
+    border-bottom: 2px solid green;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.texto-input {
+    width: 50%;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px;
+}
+
+.texto-login {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botao-cadastro {
+    all: unset;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    background-color: darkolivegreen;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.alert {
+    display: flex;
+    flex-direction: column;
+}
+
+#alerta {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#regra_senha {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#cadastrado {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
