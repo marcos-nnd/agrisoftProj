@@ -1,0 +1,61 @@
+create table endereco(
+idEndereco int primary key identity(1,1),
+CEP char(8),
+logradouro varchar(45),
+numero varchar (6),
+complemento varchar (45) default 'Sem complemento',
+cidade varchar(45),
+estado varchar(45),
+UF char(2)
+);
+
+create table fazenda (
+idFazenda int primary key identity(1,1),
+nome varchar(45),
+nomeFantasia varchar(80),
+CNPJ varchar(14),
+fkEndereco int,
+foreign key (fKEndereco) references endereco(idEndereco)
+);
+
+create table usuario (
+idUsuario int primary key identity(1,1),
+nome varchar(100),
+email varchar(80),
+senha varchar(25),
+cnpj  varchar(14),
+telefonefixo varchar(20),
+telefoneCelular varchar(20),
+fkFazenda int,
+foreign key (fKFazenda) references Fazenda (idFazenda)
+);
+
+create table hectare(
+idHectare int identity(1,1),
+tamanhoHec decimal(6,1),
+qtdSensorHec varchar(45),
+fkFazenda int,
+foreign key(fkFazenda) 
+references fazenda(idFazenda),
+primary key (idHectare,fkFazenda)
+); 
+
+create table dadosKpi(
+idKpi int primary key identity(1,1),
+minTemp varchar(45),
+maxTemp varchar(45),
+minUmi varchar(45),
+maxUmi varchar(45)
+);
+
+create table sensor (
+idSensor int identity(1,1),
+tipo char(10),
+setor char(2),
+fkDadosKpi int,
+foreign key(fkDadosKpi) references dadosKpi(idKpi)
+fkHectare int,
+fkFazenda int,
+foreign key (fkHectare, fkFazenda) references hectare(idHectare, fkFazenda),
+primary key (idSensor, fkHectare, fkFazenda),
+);
